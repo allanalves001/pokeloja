@@ -1,0 +1,99 @@
+* {
+  font-family: "Heebo";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header-top {
+  background-color: #ffa32b;
+}
+.header-top-area {
+  max-width: 1100px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.header-top-left input {
+  width: 250px;
+}
+.header-top-left i {
+  margin-left: -39px;
+}
+.header-top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.header-bottom {
+  background-color: #000;
+}
+.header-bottom-area {
+  max-width: 1100px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bottom-left nav ul, .header-bottom-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.header-bottom-left nav li, .header-bottom a {
+  color: white;
+}
+
+.section {
+  background-color: #7a7a7a;
+}
+.section-area {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  max-width: 1100px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.section-area-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 75%;
+  gap: 20px;
+}
+.section .aside-advertisement img {
+  width: 220px;
+  position: relative;
+  display: flex;
+  box-shadow: #9b9494 3px 3px 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

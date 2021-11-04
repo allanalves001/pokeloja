@@ -1,0 +1,74 @@
+@use 'variables'
+@use 'mixins'
+
+*
+    font-family: 'Heebo'
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+a
+    color: variables.$text-color
+    text-decoration: none
+    transition: .4s
+
+ul
+    list-style: none
+
+.header
+    display: flex
+    flex-direction: column
+    
+    &-top
+        background-color: variables.$secondary-color
+
+        &-area
+            @include mixins.container
+            @include mixins.space-between
+
+        &-left
+            @include mixins.display-row
+
+            input
+                width: 250px
+            i 
+                margin-left: -39px
+        
+        &-right
+            @include mixins.display-row
+
+    &-bottom
+        background-color: variables.$primary-color
+
+        &-area
+            @include mixins.container
+            @include mixins.space-between
+        
+        &-left nav ul, &-right
+            @include mixins.display-row
+
+        &-left nav li, a
+            color: white
+
+.section
+    background-color: rgb(122, 122, 122)
+
+    &-area
+        display: flex
+        flex-direction: row
+        background-color: #fff
+        @include mixins.container
+        padding: 2rem
+
+        &-main
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr
+            width: 75%
+            gap: 20px
+
+
+    .aside-advertisement img
+        width: 220px
+        position: relative
+        display: flex
+        box-shadow: #9b9494 3px 3px 2px

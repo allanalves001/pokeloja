@@ -100,7 +100,7 @@ body {
 
 
 section {
-    background-color: gray;
+    background-color: rgb(122, 122, 122);
 }
 .main-area {
     display: flex;

@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1.0">
-    <link href="dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Pokéloja</title>
 </head>
 
 <body>
-    <header>
-        <div class="upper-header">
-            <div class="upper-header--area">
-                <div class="upper-header--left">
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-area">
+                <div class="header-top-left">
                     <h1 class="title">Pokéloja</h1>
                     <input type="text" placeholder="Procurar Pokémon"/>
-                    <img class="lupa" src="Assets/images/lupa.png" />
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
-                <div class="upper-header--right">
+                <div class="header-top-right">
                     <a href="">SOBRE</a>
                     <a href="">CONTATO</a>
-                    <a href=""><img src="assets/images/cart.png" /></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>
             </div>
         </div>
-        <div class="lower-header">
-            <div class="lower-header--area">
-                <div class="lower-header--left">
+        <div class="header-bottom">
+            <div class="header-bottom-area">
+                <div class="header-bottom-left">
                     <nav class="menu-main">
                         <ul>
                             <a href=""><li>Home</li></a>
@@ -36,18 +40,18 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="lower-header--right">
-                    <a><img class="social" src="assets/images/insta.png "/></a>
-                    <a><img class="social" src="assets/images/twitter.png"/></a>
-                    <a><img class="social" src="assets/images/a0f6be8c9d600fd5f55fb4f79a2d195b.png "/></a>
+                <div class="header-bottom-right">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
                 </div>
             </div>                
         </div>
     </header>
 
-    <section>
-        <div class="main-area">
-            <main class="pokemon-display-area">
+    <section class="section">
+        <div class="section-area">
+            <main class="section-area-main">
                 <div class="card">
                     <img class="pokemon-img" src="assets/images/pikachu.png" />
                     <h2 class="title">Pikachu</h2>
@@ -139,8 +143,8 @@
                     <a class="page-selector-button" href="">4</a>
                 </div>
             </main>
-            <aside>
-                <div class="aside-section">
+            <aside class="section-area-aside">
+                <div class="aside-area">
                     <div class="aside-advertisement">
                         <img src="assets/images/advertisement.png" />
                         <h2>POKÉBOLAS</h2>
