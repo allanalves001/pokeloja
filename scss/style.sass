@@ -66,9 +66,56 @@ ul
             width: 75%
             gap: 20px
 
+            &-card
+                border: variables.$border
+                @include mixins.display-column
+                border-radius: 5px
+                padding: 0px
+                
+            & .pikachu:hover
+                @include mixins.bg-img('pikachu-background.gif')
+
+            & .charmander:hover
+                @include mixins.bg-img('charmander-background.gif')
+
+            & .squirtle:hover
+                @include mixins.bg-img('squirtle-background.gif')
+
+            & .Bubassaur:hover
+                @include mixins.bg-img('Bubassaur-background.gif')
+
+            .title
+                text-shadow: variables.$shadow
+                font-weight: 500
+                margin-top: 5px
+            
+            .crossed-price
+                text-decoration: line-through
+                color: #666666
+                font-size: 13px
+                font-weight: 900
+
+            .price
+                font-weight: 900
+                color: #096e00
+                font-size: 20px
+                text-shadow: variables.$shadow
+                margin-bottom: 12px
+            
+            .buy-button
+                @include mixins.button
+
+                &:hover
+                     @include mixins.button-hover
+                
+                &:active
+                    @include mixins.button-active
+                
 
     .aside-advertisement img
         width: 220px
         position: relative
         display: flex
         box-shadow: #9b9494 3px 3px 2px
+
+      

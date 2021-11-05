@@ -89,6 +89,80 @@ ul {
   width: 75%;
   gap: 20px;
 }
+.section-area-main-card {
+  border: 1px solid #d1d1d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0px;
+}
+.section-area-main .pikachu:hover {
+  background-image: url("../assets/images/pikachu-background.gif");
+  object-fit: fill;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-area-main .charmander:hover {
+  background-image: url("../assets/images/charmander-background.gif");
+  object-fit: fill;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-area-main .squirtle:hover {
+  background-image: url("../assets/images/squirtle-background.gif");
+  object-fit: fill;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-area-main .Bubassaur:hover {
+  background-image: url("../assets/images/Bubassaur-background.gif");
+  object-fit: fill;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.section-area-main .title {
+  text-shadow: 1px 1px 1px #8a8a8a;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.section-area-main .crossed-price {
+  text-decoration: line-through;
+  color: #666666;
+  font-size: 13px;
+  font-weight: 900;
+}
+.section-area-main .price {
+  font-weight: 900;
+  color: #096e00;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #8a8a8a;
+  margin-bottom: 12px;
+}
+.section-area-main .buy-button {
+  box-shadow: 0px 10px 14px -7px #3dc21b;
+  background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+  background-color: #44c767;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.section-area-main .buy-button:hover {
+  background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+  background-color: #5cbf2a;
+}
+.section-area-main .buy-button:active {
+  position: relative;
+  top: 1px;
+}
 .section .aside-advertisement img {
   width: 220px;
   position: relative;
