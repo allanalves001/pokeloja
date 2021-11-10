@@ -59,6 +59,7 @@ ul
         background-color: #fff
         @include mixins.container
         padding: 2rem
+        justify-content: space-between
 
         &-main
             display: grid
@@ -70,7 +71,8 @@ ul
                 border: variables.$border
                 @include mixins.display-column
                 border-radius: 5px
-                padding: 0px
+                padding-top: 8px
+                padding-bottom: 8px
                 
             & .pikachu:hover
                 @include mixins.bg-img('pikachu-background.gif')
@@ -213,3 +215,110 @@ ul
                         width: 60px
                         margin-left: 10px
                         margin-left: 5px
+
+                    & p
+                        font-size: 20px
+                        margin-left: 5px
+            
+            & .form
+                background-color: lightgray
+                width: 220px
+                height: 200px
+                margin-top: 40px
+                border-radius: 5px
+                box-shadow: #9b9494 3px 3px 5px
+
+                & .form-title
+                    text-align: center
+                    margin: 10px
+                    margin-bottom: 15px
+                
+            & form label 
+                font-size: 16px
+                text-transform: uppercase
+                margin-left: 10px
+
+            & form .email 
+                height: 23px
+                width: 190px
+                margin-left: 10px
+                margin-top: 5px
+
+            form .button
+                height: 30px
+                width: 190px
+                margin-left: 10px
+                margin-top: 10px
+                border-radius: 5px
+                border: 2px solid #9b9494
+                box-shadow: #9b9494 3px 3px 2px
+                font-weight: bold
+                background-color: rgb(70, 172, 235)
+                color: #ffffff
+
+footer 
+    background-color: black
+    color: white
+    display: inline-block
+    min-width: 100vw
+    padding-bottom: 20px
+
+    & .footer-content 
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 1100px
+        margin: auto
+        padding-top: 30px
+
+        &--left 
+            display: flex
+            flex-direction: row
+
+        &--left nav ul a 
+            display: flex
+            flex-direction: column
+            color: #ffffff
+            margin-bottom: 5px
+            font-size: 20px
+            list-style-type: none
+            text-decoration: none
+
+        &--middle 
+            display: flex
+            flex-direction: column
+            margin-left: 80px
+
+            & .footer-toppokemons--title
+                font-size: 20px
+                text-transform: uppercase
+                border-bottom: 2px solid #9b9494
+                padding-right: 90px
+                padding-bottom: 5px
+
+        & .footer-content--middle ol li 
+            display: flex
+            flex-direction: row
+            align-items: center
+            margin-top: 20px                
+
+            & .position
+                font-weight: bold
+                font-size: 50px
+
+            &--middle ol li img 
+                width: 40px
+                margin-left: 10px
+                margin-left: 5px
+
+            &--middle ol li p 
+                font-size: 20px
+                margin-left: 5px
+        
+        &--right
+            display: flex
+            flex-direction: row
+            gap: 1rem
+
+        &--right a
+            color: rgb(255, 255, 255)

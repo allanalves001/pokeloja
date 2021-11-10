@@ -82,6 +82,7 @@ ul {
   padding: 1rem 0;
   margin: 0 auto;
   padding: 2rem;
+  justify-content: space-between;
 }
 .section-area-main {
   display: grid;
@@ -96,7 +97,8 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  padding: 0px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .section-area-main .pikachu:hover {
   background-image: url("../assets/images/pikachu-background.gif");
@@ -150,7 +152,7 @@ ul {
   background-color: #44c767;
   color: white;
   font-weight: bold;
-  padding: 10px 25px;
+  padding: 8px 25px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
@@ -270,6 +272,114 @@ ul {
   width: 60px;
   margin-left: 10px;
   margin-left: 5px;
+}
+.section-area-aside .aside-toppokemons ol li p {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.section-area-aside .form {
+  background-color: lightgray;
+  width: 220px;
+  height: 200px;
+  margin-top: 40px;
+  border-radius: 5px;
+  box-shadow: #9b9494 3px 3px 5px;
+}
+.section-area-aside .form .form-title {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 15px;
+}
+.section-area-aside form label {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.section-area-aside form .email {
+  height: 23px;
+  width: 190px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.section-area-aside form .button {
+  height: 30px;
+  width: 190px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #9b9494;
+  box-shadow: #9b9494 3px 3px 2px;
+  font-weight: bold;
+  background-color: #46aceb;
+  color: #ffffff;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  min-width: 100vw;
+  padding-bottom: 20px;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  margin: auto;
+  padding-top: 30px;
+}
+footer .footer-content--left {
+  display: flex;
+  flex-direction: row;
+}
+footer .footer-content--left nav ul a {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 20px;
+  list-style-type: none;
+  text-decoration: none;
+}
+footer .footer-content--middle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+footer .footer-content--middle .footer-toppokemons--title {
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #9b9494;
+  padding-right: 90px;
+  padding-bottom: 5px;
+}
+footer .footer-content .footer-content--middle ol li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+footer .footer-content .footer-content--middle ol li .position {
+  font-weight: bold;
+  font-size: 50px;
+}
+footer .footer-content .footer-content--middle ol li--middle ol li img {
+  width: 40px;
+  margin-left: 10px;
+  margin-left: 5px;
+}
+footer .footer-content .footer-content--middle ol li--middle ol li p {
+  font-size: 20px;
+  margin-left: 5px;
+}
+footer .footer-content--right {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+footer .footer-content--right a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
