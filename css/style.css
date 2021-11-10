@@ -163,11 +163,113 @@ ul {
   position: relative;
   top: 1px;
 }
-.section .aside-advertisement img {
+.section-area-main .page-selector-area {
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin: auto;
+}
+.section-area-main .page-selector-area a {
+  text-decoration: none;
+  color: #424242;
+}
+.section-area-main .page-selector-button {
+  border: 2px solid #9b9494;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.section-area-main .page-selector-button:hover {
+  background-color: #c2c2c2;
+}
+.section-area-main .page-selector-button:last-child {
+  margin-right: 0px;
+}
+.section-area-main .selected {
+  background-color: #9b9494;
+  border: 1px solid #000000;
+}
+.section-area-aside .aside-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-area-aside .aside-area .aside-advertisement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.section-area-aside .aside-area .aside-advertisement img {
   width: 220px;
   position: relative;
   display: flex;
   box-shadow: #9b9494 3px 3px 2px;
+}
+.section-area-aside .aside-area .aside-advertisement h2 {
+  animation: color-change 6s infinite linear;
+  position: absolute;
+  top: 330px;
+  font-weight: 900;
+  text-shadow: #ffffff 3px 3px 2px;
+  letter-spacing: 1px;
+}
+.section-area-aside .aside-area .aside-advertisement h3 {
+  animation: color-change 6s infinite linear;
+  position: absolute;
+  top: 350px;
+  text-shadow: #ffffff 3px 3px 2px;
+  letter-spacing: 1px;
+}
+
+@keyframes color-change {
+  0% {
+    color: #e92b2b;
+  }
+  33% {
+    color: #ffee00;
+  }
+  66% {
+    color: blue;
+  }
+  100% {
+    color: green;
+  }
+}
+.section-area-aside .aside-toppokemons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-area-aside .aside-toppokemons-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #9b9494;
+  margin-top: 50px;
+  padding-right: 90px;
+  padding-bottom: 5px;
+}
+.section-area-aside .aside-toppokemons ol li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.section-area-aside .aside-toppokemons ol li .position {
+  font-weight: bold;
+  font-size: 40px;
+}
+.section-area-aside .aside-toppokemons ol li img {
+  width: 60px;
+  margin-left: 10px;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

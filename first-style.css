@@ -213,8 +213,8 @@ section {
 @keyframes example {
     0%   {color: rgb(233, 43, 43);}
     33%  {color: rgb(255, 238, 0);}
-    66%  {color: blue;}
-    100% {color: green;}
+    66%  {color: rgb(0, 0, 255);}
+    100% {color: rgb(0, 128, 0);}
 }
 .aside-advertisement  h2 {
     position: absolute;
@@ -241,7 +241,7 @@ section {
     display: flex;
     flex-direction: column;
 }
-.aside-toppokemons--title {
+.aside-toppokemons-title {
     font-size: 16px;
     text-transform: uppercase;
     border-bottom: 2px solid #9b9494;

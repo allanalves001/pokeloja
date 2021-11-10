@@ -110,12 +110,106 @@ ul
                 
                 &:active
                     @include mixins.button-active
+
+            & .page-selector-area
+                display: flex
+                flex-direction: row
+                grid-column-start: 1
+                grid-column-end: 5
+                grid-row-start: 4
+                grid-row-end: 5
+                margin: auto
+
+            & .page-selector-area a 
+                text-decoration: none
+                color: #424242
+
+            & .page-selector-button
+                border: 2px solid #9b9494
+                padding: 8px
+                border-radius: 3px
+                font-size: 20px
+                margin-right: 5px
+
+                &:hover
+                    background-color: #c2c2c2
+                
+                &:last-child
+                    margin-right: 0px
+
+            & .selected
+                background-color: #9b9494
+                border: 1px solid #000000
+            
                 
 
-    .aside-advertisement img
-        width: 220px
-        position: relative
-        display: flex
-        box-shadow: #9b9494 3px 3px 2px
+        &-aside .aside-area
+            @include mixins.display-column
 
-      
+            & .aside-advertisement
+                @include mixins.display-column
+                cursor: pointer
+
+            & .aside-advertisement img
+                width: 220px
+                position: relative
+                display: flex
+                box-shadow: #9b9494 3px 3px 2px
+
+            & .aside-advertisement h2
+                animation: color-change 6s infinite linear
+                position: absolute
+                top: 330px
+                font-weight: 900
+                text-shadow: #ffffff 3px 3px 2px
+                letter-spacing: 1px
+
+            & .aside-advertisement h3
+                animation: color-change 6s infinite linear
+                position: absolute
+                top: 350px
+                text-shadow: #ffffff 3px 3px 2px
+                letter-spacing: 1px
+            
+@keyframes color-change
+    0%
+        color: rgb(233, 43, 43)
+    33%
+        color: rgb(255, 238, 0)
+    66%
+        color: rgb(0, 0, 255)
+    100%
+        color: rgb(0, 128, 0)
+
+.section
+
+    &-area
+
+        &-aside
+
+            & .aside-toppokemons
+
+                @include mixins.display-column
+
+                &-title
+                    font-size: 16px
+                    text-transform: uppercase
+                    border-bottom: 2px solid #9b9494
+                    margin-top: 50px
+                    padding-right: 90px
+                    padding-bottom: 5px
+
+                & ol li
+                    display: flex
+                    flex-direction: row
+                    align-items: center
+                    margin-top: 20px
+
+                    & .position
+                        font-weight: bold
+                        font-size: 40px
+                    
+                    & img
+                        width: 60px
+                        margin-left: 10px
+                        margin-left: 5px
